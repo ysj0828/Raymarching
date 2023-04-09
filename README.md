@@ -1,4 +1,16 @@
 # Raymarching
 셰이더 공부 &amp; ray marching 기술 공부
 
-## Ray marching 과 Signed Distance Function을 활용한 렌더링
+Ray marching이란?\
+
+메시 데이터를 이용해 그리는 기존의 3D 렌더링 방식과는 달리 Signed Distance Function (SDF, 거리함수) 통해 오브젝트의 표면을 정의\
+
+카메라에서 스크린 픽셀을 향해 레이를 전진시키고, 해당 픽셀의 레이가 오브젝트 표면에 닿으면 그 픽셀에 오브젝트 표면을 렌더링\
+
+장점\
+메시 데이터가 필요없으며 부드러운 표면이나 곡선 혹은 여러 오브젝트가 섞이는 듯한 연출이 가능\
+
+단점\
+연산이 매우 무겁다
+
+## Ray marching 과 SDF을 활용한 렌더링
